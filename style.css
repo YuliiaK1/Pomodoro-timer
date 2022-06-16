@@ -483,6 +483,8 @@ input[type="number"]::-webkit-inner-spin-button:active {
    height: 53px;
    background-color: #F87070;
    -webkit-appearance: none;
+   -moz-appearance: none; 
+   appearance: none;
    border: none;
    border-radius: 26.5px;
    font-weight: 700;

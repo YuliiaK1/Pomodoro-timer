@@ -370,7 +370,13 @@ input[type="number"]::-webkit-inner-spin-button:active {
 
 .font__list {
    display: flex;
-   gap: 16px;
+}
+
+.font__list>li {
+   margin-right: 1rem;
+}
+.font__list:last-child() {
+   margin-right: 0;
 }
 
 .font__list-element {
@@ -425,10 +431,9 @@ input[type="number"]::-webkit-inner-spin-button:active {
 
 .color__list {
    display: flex;
-   gap: 16px;
 }
 
-.color__list>li {
+.color__list-element {
    width: 40px;
    height: 40px;
    border-radius: 50% 50%;
@@ -441,6 +446,11 @@ input[type="number"]::-webkit-inner-spin-button:active {
    padding: 13px 10px 8px 8px;
    cursor: pointer;
    list-style: none;
+   margin-right: 1rem;
+}
+
+.color__list:last-child() {
+   margin-right: 0;
 }
 
 .color__list>li:first-child {

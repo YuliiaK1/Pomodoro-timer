@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pomodoro timer</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="wrapper">
+      <div class="overlay overlay01"></div>
+      <!-- Navigation block -->
+      <h1>pomodoro</h1>
+      <nav id="control">
+         <button class="control__button button--active" type="button" value="pomodoro">pomodoro</button>
+         <button class="control__button" type="button" value="short">short break</button>
+         <button class="control__button" type="button" value="long">long break</button>
+      </nav>
+      <!-- Timer block--> 
+      <div class="timer" id="timer">
+         <div class="timer__one-circle">
+            <div id="app"></div>
+            <div class="timer-panel">
+               <p class="time" id="time">25:00</p>
+               <p class="start" id="start">START</p>
+            </div>
+         </div>
+      </div>
+      <!-- Settings panel --> 
+      <div class="block-setting">
+         <button class="setting__button" type="button"></button>
+      </div>
+      <!-- Settings panel open --> 
+      <div class="setting-modal hidden">
+         <h2>Setting</h2>
+         <div class="modal__close-button"></div>
+         <hr class="one-hr">
+         <h3>TIME (MINUTES)</h3>
+         
+         <!-- Timing --> 
+         <div class="modal__time-setting">
+            <form onsubmit="return false;">
+            <div class="resize">
+               <p class="modal__time-title">pomodoro</p>
+              <input type="number" class="input" id="input-pomodoro" value="25" min="1" max="60" title="Введите число от 1 до 60" required>
+            </div>
+            <div class="resize">
+               <p class="modal__time-title">short break</p>
+               <input type="number" class="input" id="input-short" value="5" min="1" max="5" title="Введите число от 1 до 5" required>
+            </div>
+            <div class="resize">
+               <p class="modal__time-title">long break</p>
+               <input type="number" class="input" id="input-long" value="15" min="5" max="15" title="Введите число от 5 до 15" required>
+            </div>
+            <div class="modal__apply-setting overlay-close">
+               <input type="submit" value="Apply" class="apply-button" id="button-change" >
+            </div>
+         </form>
+         </div>
+         <hr class="two-hr">
+
+         <!-- Font weight selection --> 
+         <div class="modal__font-setting">
+            FONT
+            <ul class="font__list" id="fontList">
+               <li class="font__list-element active" data-font="Kumbh">Aa</li>
+               <li class="font__list-element" data-font="Roboto">Aa</li>
+               <li class="font__list-element" data-font="Space">Aa</li>
+            </ul>
+         </div>
+         <hr class="three-hr">
+
+         <!-- Color selection --> 
+         <div class="modal__color-setting">
+            COLOR
+            <ul class="color__list" id="colorList">
+               <li class="color__list-element color-active" data-color="pink"></li>
+               <li class="color__list-element" data-color="blue"></li>
+               <li class="color__list-element" data-color="fiolet"></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+   <script src="./index.js"></script>
+</body>
+</html>

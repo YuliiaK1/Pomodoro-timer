@@ -1,5 +1,6 @@
 # Pomodoro-timer
-A simple and beautiful Pomodoro timer. A Pomodoro timer is a productivity tool that allows you to stay focused on one task for certain time.
+A simple and beautiful Pomodoro timer. 
+A Pomodoro timer is a productivity tool that allows you to stay focused on one task for certain time.
 
 🚀 Try now! https://yuliiak1.github.io/Pomodoro-timer/
 

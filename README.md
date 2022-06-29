@@ -14,7 +14,8 @@ The Pomodoro Technique sounds basic, but it really works. You set a timer for 25
 This application is written in Vanilla JavaScript. The application works in different browsers, including on mobile devices.
 
 How to Run the Game
-Play the game in your browser by following this link: https://yuliiak1.github.io/Pomodoro-timer/  .
+Play the game in your browser by following this link: 
+https://yuliiak1.github.io/Pomodoro-timer/  .
 
 Alternatively:
 Download or clone the repository.
